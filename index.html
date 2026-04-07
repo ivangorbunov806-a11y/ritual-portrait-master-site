@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портреты на памятниках — мастер художественного портрета на камне</title>
+  <meta name="description" content="Художественный портрет на памятник от мастера с опытом: точное сходство, ручная работа, деликатный подход. Отправьте фото и получите оценку стоимости." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-time-backdrop" aria-hidden="true">
+      <span>19</span>
+      <span>52</span>
+      <span>20</span>
+      <span>21</span>
+    </div>
+
+    <div class="hero-content container">
+      <p class="eyebrow">Память → Время → Форма → Портрет</p>
+      <h1>Портреты на памятниках с художественной точностью</h1>
+      <p class="hero-subtitle">
+        Художественный портрет на памятник и портрет на камне — ручная работа мастера портретов на памятниках
+        с вниманием к сходству, деталям и уважением к памяти человека.
+      </p>
+      <a href="#contact" class="btn-primary">Отправить фото на оценку</a>
+
+      <!-- БЛОК ВРЕМЕНИ: можно заменить годы и стиль линии вручную; при необходимости подключите time-reference.jpg -->
+      <div class="time-element" aria-label="Линия времени">
+        <span class="time-year">1952</span>
+        <span class="time-line" aria-hidden="true"><span class="time-pulse"></span></span>
+        <span class="time-year">2021</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="gallery">
+      <div class="section-head">
+        <h2>Галерея работ</h2>
+        <p>Несколько примеров того, как художественная точность помогает сохранить узнаваемый образ.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- ЗАМЕНА ИЗОБРАЖЕНИЙ: добавьте gallery-1.jpg / gallery-2.jpg / gallery-3.jpg в assets/images.
+             В этом PR бинарные изображения намеренно не добавляются. -->
+        <button class="gallery-item" data-image="assets/images/gallery-1.jpg" data-caption="Портрет на камне — работа №1">
+          <img src="assets/images/gallery-1.jpg" alt="Портрет на памятнике, пример работы 1" loading="lazy" />
+        </button>
+        <button class="gallery-item" data-image="assets/images/gallery-2.jpg" data-caption="Портрет на камне — работа №2">
+          <img src="assets/images/gallery-2.jpg" alt="Художественный портрет на памятник, пример работы 2" loading="lazy" />
+        </button>
+        <button class="gallery-item" data-image="assets/images/gallery-3.jpg" data-caption="Портрет на камне — работа №3">
+          <img src="assets/images/gallery-3.jpg" alt="Мастер портретов на памятниках, пример работы 3" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="container narrow">
+        <h2>О мастере</h2>
+        <p>
+          Я работаю с портретами на камне более 18 лет. Имею художественное образование и веду каждый заказ лично:
+          от оценки фото до финальных штрихов.
+        </p>
+        <p>
+          В этой работе для меня важны не только техника и материал, но и точное, уважительное сохранение образа человека.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container" id="trust">
+      <h2>Почему доверяют</h2>
+      <div class="cards-grid">
+        <article class="card"><h3>Художественный взгляд</h3><p>Портрет строится как образ, а не механическая копия.</p></article>
+        <article class="card"><h3>Точное сходство</h3><p>Внимание к чертам лица, пропорциям и характеру выражения.</p></article>
+        <article class="card"><h3>Ручная работа</h3><p>Каждая работа выполняется вручную, без шаблонного подхода.</p></article>
+        <article class="card"><h3>Опыт и практика</h3><p>Большое количество выполненных портретов на памятниках.</p></article>
+        <article class="card"><h3>Деликатный подход</h3><p>Спокойное согласование и уважительное общение на каждом этапе.</p></article>
+        <article class="card"><h3>Ответственность за результат</h3><p>Работа ведётся лично мастером до финального результата.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="process">
+      <div class="container">
+        <h2>Как проходит работа</h2>
+        <ol class="process-list">
+          <li><span>1</span>Вы отправляете фото удобным способом.</li>
+          <li><span>2</span>Я оцениваю материал и согласовываю детали портрета.</li>
+          <li><span>3</span>Выполняю художественный портрет на памятник.</li>
+          <li><span>4</span>Вы получаете готовый результат в согласованные сроки.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section container" id="pricing">
+      <div class="pricing-box">
+        <h2>Стоимость</h2>
+        <p>Точная цена зависит от исходного фото, размера портрета и сложности работы.</p>
+        <p class="pricing-cta">Отправьте фото — я скажу точную стоимость и предложу лучший вариант.</p>
+        <a href="#contact" class="btn-secondary">Узнать стоимость</a>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="faq">
+      <div class="container narrow">
+        <h2>Частые вопросы</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Можно ли сделать портрет по старой фотографии?</summary>
+            <p>Да, в большинстве случаев это возможно. Предварительно я оцениваю качество фото и объясняю, какой результат получится.</p>
+          </details>
+          <details>
+            <summary>Насколько точным будет сходство?</summary>
+            <p>Главная задача — узнаваемость и характер человека. Я уделяю особое внимание пропорциям, выражению лица и деталям.</p>
+          </details>
+          <details>
+            <summary>Сколько времени занимает работа?</summary>
+            <p>Срок зависит от сложности и текущей загрузки. После оценки фото я сразу называю ориентир по времени.</p>
+          </details>
+          <details>
+            <summary>Как проходит согласование?</summary>
+            <p>До начала работы обсуждаем ключевые детали: фото, формат, размер и важные нюансы, которые нужно сохранить в образе.</p>
+          </details>
+          <details>
+            <summary>Можно ли заранее обсудить детали без заказа?</summary>
+            <p>Конечно. Вы можете отправить фото и вопросы — я спокойно проконсультирую и подскажу оптимальное решение.</p>
+          </details>
+          <details>
+            <summary>Вы работаете лично с каждым заказом?</summary>
+            <p>Да, все работы выполняю лично. Это позволяет сохранять стабильный уровень и точность в каждом портрете.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section container" id="contact">
+    <div class="contact-grid">
+      <div>
+        <h2>Обсудить ваш запрос</h2>
+        <p>Выберите удобный способ связи — отвечу и помогу с оценкой по фото.</p>
+        <ul class="contact-list">
+          <li>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+          <li>WhatsApp: <a href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer">Написать</a></li>
+          <li>Telegram: <a href="https://t.me/username" target="_blank" rel="noopener noreferrer">@username</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" novalidate>
+        <label>
+          Имя
+          <input type="text" name="name" placeholder="Ваше имя" required />
+        </label>
+        <label>
+          Телефон
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </label>
+        <label>
+          Комментарий
+          <textarea name="comment" rows="4" placeholder="Кратко опишите задачу"></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Получить консультацию</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Мастер художественных портретов на камне</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <img id="lightboxImage" src="" alt="Увеличенное изображение работы" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
