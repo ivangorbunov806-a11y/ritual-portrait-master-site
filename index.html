@@ -14,6 +14,10 @@
   <header class="hero" id="top">
     <canvas id="particleCanvas" aria-hidden="true"></canvas>
     <div class="hero-overlay"></div>
+    <div class="hero-memory-years" aria-hidden="true">
+      <span class="memory-year memory-year--left">1952</span>
+      <span class="memory-year memory-year--right">2021</span>
+    </div>
 
     <div class="hero-content container">
       <p class="eyebrow">Память → Время → Форма → Портрет</p>
@@ -23,13 +27,12 @@
         с вниманием к сходству, деталям и уважением к памяти человека.
       </p>
       <a href="#contact" class="btn-primary">Отправить фото на оценку</a>
+    </div>
 
-      <!-- БЛОК ВРЕМЕНИ: можно заменить содержимое линии и годы вручную или подключить изображение time-reference.jpg -->
-      <div class="time-element" aria-label="Тема времени">
-        <span>1952</span>
-        <span class="time-line" aria-hidden="true"></span>
-        <span>2021</span>
-      </div>
+    <div class="hero-timeband" aria-label="Линия времени">
+      <span class="hero-timeband__year">1952</span>
+      <span class="hero-timeband__line" aria-hidden="true"></span>
+      <span class="hero-timeband__year">2021</span>
     </div>
   </header>
 
